@@ -10,9 +10,27 @@ const AudioPlayer: React.FC = () => {
   const [progress, setProgress] = useState(0);
   const [duration, setDuration] = useState(0);
   const [currentTime, setCurrentTime] = useState(0);
+  const getArtist = () => {
+    const now = new Date();
+    const hour = now.getHours();
+    const day = now.getDay();
+
+    if (day === 6) {
+      if (hour < 11) return "Mikuki ya Maneno";
+      if (hour < 14) return "Swahilipot Aroma";
+      return "Vibes and music";
+    } else {
+      if (hour < 10) return "The Breakfast Club";
+      if (hour < 11) return "Kick-off";
+      if (hour < 14) return "Swahilipot Cafe";
+      if (hour < 19) return "Swahilipot Drive";
+      return "Vibes and music";
+    }
+  };
+
   const [stationInfo, setStationInfo] = useState({
     title: "Swahilipot FM",
-    artist: "Now Playing: The Morning Show",
+    artist: `Now Playing: ${getArtist()}`,
   });
   
   const audioRef = useRef<HTMLAudioElement | null>(null);
@@ -128,7 +146,7 @@ const AudioPlayer: React.FC = () => {
               <Tooltip>
                 <TooltipTrigger asChild>
                   <button
-                    className="flex h-10 w-10 items-center justify-center rounded-full bg-black text-white transition-transform hover:scale-105"
+                    className="flex h-10 w-10 items-center justify-center rounded-full bg-[#2295e2] text-white transition-transform hover:scale-105"
                     onClick={togglePlay}
                     aria-label={isPlaying ? "Pause" : "Play"}
                   >

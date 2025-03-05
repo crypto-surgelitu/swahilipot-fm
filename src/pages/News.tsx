@@ -162,7 +162,7 @@ const newsArticles = [
   {
     id: "2",
     title: "New Summer Concert Series Announced",
-    excerpt: "Wavelength Radio partners with the city to bring an exciting summer concert series to the downtown amphitheater.",
+    excerpt: "Swahilipot FM partners with the city to bring an exciting summer concert series to the downtown amphitheater.",
     category: "Events",
     date: "June 10, 2023",
     image: "https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?q=80&w=800&auto=format&fit=crop"
@@ -177,8 +177,8 @@ const newsArticles = [
   },
   {
     id: "4",
-    title: "Wavelength Wins Best Local Radio Station Award",
-    excerpt: "We're honored to announce that Wavelength Radio has been named Best Local Radio Station for the third consecutive year.",
+    title: "Swahilipot FM Wins Best Local Radio Station Award",
+    excerpt: "We're honored to announce that Swahilipot FM has been named Best Local Radio Station for the third consecutive year.",
     category: "Awards",
     date: "May 28, 2023",
     image: "https://images.unsplash.com/photo-1498429089284-41f8cf3ffd39?q=80&w=800&auto=format&fit=crop"
@@ -202,14 +202,14 @@ const newsArticles = [
   {
     id: "7",
     title: "Annual Music Festival Lineup Revealed",
-    excerpt: "The wait is over! Check out the full lineup for this year's Downtown Music Festival, sponsored by Wavelength Radio.",
+    excerpt: "The wait is over! Check out the full lineup for this year's Downtown Music Festival, sponsored by Swahilipot FM.",
     category: "Events",
     date: "May 8, 2023",
     image: "https://images.unsplash.com/photo-1459749411175-04bf5292ceea?q=80&w=800&auto=format&fit=crop"
   },
   {
     id: "8",
-    title: "Wavelength Radio App Gets Major Update",
+    title: "Swahilipot FM Radio App Gets Major Update",
     excerpt: "Our mobile app just got even better with new features including offline listening and enhanced playlists.",
     category: "Technology",
     date: "May 1, 2023",

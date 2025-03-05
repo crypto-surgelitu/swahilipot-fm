@@ -284,7 +284,7 @@ const Contact = () => {
           <div className="max-w-3xl mx-auto text-center mb-12">
             <h2 className="font-display text-3xl font-bold mb-4">Frequently Asked Questions</h2>
             <p className="text-gray-600">
-              Find answers to the most common questions about Wavelength Radio.
+              Find answers to the most common questions about Swahilipot FM.
             </p>
           </div>
           
