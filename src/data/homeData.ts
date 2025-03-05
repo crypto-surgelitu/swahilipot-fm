@@ -32,7 +32,7 @@ export const latestNews = [
   {
     id: "2",
     title: "New Summer Concert Series Announced",
-    excerpt: "Wavelength Radio partners with the city to bring an exciting summer concert series to the downtown amphitheater.",
+    excerpt: "Swahilipot FM partners with the city to bring an exciting summer concert series to the downtown amphitheater.",
     category: "Events",
     date: "June 10, 2023",
     image: "https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?q=80&w=800&auto=format&fit=crop"

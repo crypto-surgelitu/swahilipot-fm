@@ -38,7 +38,7 @@ const HeroSection = () => {
               
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button size="lg" className="rounded-full font-medium bg-[#271d73] text-white hover:bg-[#2295e2] h-12 px-8">
-                  <Play className="mr-2 h-4 w-4" /> Listen Now
+                  <Link to="/about">About Swahilipot FM</Link>
                 </Button>
                 <Button variant="outline" size="lg" className="rounded-full font-medium border-gray-300 h-12 px-8" asChild>
                   <Link to="/schedule">View Schedule</Link>
