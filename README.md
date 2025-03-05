@@ -1,0 +1,43 @@
+# Swahilipot FM
+
+Swahilipot FM is a community-driven radio station project aimed at providing a platform for local artists, news, and cultural content. This repository contains the source code and documentation for the Swahilipot FM project.
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+
+## Installation
+
+To get started with Swahilipot FM, clone the repository and install the necessary dependencies:
+
+```bash
+git clone https://github.com/<yourusername>/swahilipot-fm.git
+cd swahilipot-fm
+npm install
+```
+
+## Usage
+
+To start the development server, run:
+
+```bash
+npm start
+```
+
+This will launch the application and you can view it in your browser.
+
+## Contributing
+
+We welcome contributions from the community! To contribute, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Make your changes and commit them (`git commit -m 'Add new feature'`).
+4. Push to the branch (`git push origin feature-branch`).
+5. Open a pull request.
+
+Please ensure your code follows our coding standards and includes appropriate tests.
