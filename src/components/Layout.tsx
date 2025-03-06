@@ -71,19 +71,19 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
             </Link>
             <div className='flex gap-3'>
               <Link to='https://www.youtube.com/@swahilipotfm'>
-                <FaYoutube className="h-6 w-6" />
+                <FaYoutube className="text-[#2295e2] h-6 w-6" />
               </Link>
               <Link to='https://x.com/swahilipotfm'>
-                <FaXTwitter className="h-6 w-6" />
+                <FaXTwitter className="text-[#2295e2] h-6 w-6" />
               </Link>
               <Link to='https://whatsapp.com/channel/0029Vap3gSq7z4kc8n1ECO0P'>
-                <FaWhatsapp className="h-6 w-6" />
+                <FaWhatsapp className="text-[#2295e2] h-6 w-6" />
               </Link>
               <Link to='https://www.instagram.com/swahilipotfm/'>
-                <FaInstagram className="h-6 w-6" />
+                <FaInstagram className="text-[#2295e2] h-6 w-6" />
               </Link>
               <Link to='https://www.facebook.com/profile.php?id=100093582650835'>
-                <FaFacebook className="h-6 w-6" />
+                <FaFacebook className="text-[#2295e2] h-6 w-6" />
               </Link>
             </div>
           </nav>

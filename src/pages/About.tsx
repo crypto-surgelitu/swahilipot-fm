@@ -68,7 +68,7 @@ const About = () => {
                   className="w-full aspect-[4/3] object-cover"
                 />
               </div>
-              <div className="absolute -bottom-8 -right-8 w-32 h-32 rounded-full bg-[#2295e2] p-3">
+              <div className="absolute -bottom-8 -right-4 w-32 h-32 rounded-full bg-[#2295e2] p-3">
                 <div className="w-full h-full rounded-full border-4 border-white flex items-center justify-center text-white">
                   <div className="text-center">
                     <p className="text-xl font-bold">EST.</p>

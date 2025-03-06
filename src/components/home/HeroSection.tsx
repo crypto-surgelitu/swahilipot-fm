@@ -1,11 +1,14 @@
-import React from 'react';
-import { Play } from 'lucide-react';
+import React, { useRef } from "react";
+import Slider from "react-slick";
+import { Play } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const HeroSection = () => {
-  const heroRef = React.useRef<HTMLElement>(null);
-  // Get current time of day greeting
+  const heroRef = useRef<HTMLElement>(null);
+
   const getGreeting = () => {
     const hour = new Date().getHours();
     if (hour < 12) return "Good morning";
@@ -13,52 +16,61 @@ const HeroSection = () => {
     return "Good evening";
   };
 
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 1000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    fade: true,
+    arrows: false,
+  };
+
+  const mockImages = [
+    "/show-banners/breakfast-club.png",
+    "/show-banners/swahilipot-aroma.png",
+    "/show-banners/mikuki-ya-maneno.png",
+  ];
+
   return (
-    <section className="relative overflow-hidden min-h-[600px] md:min-h-[700px]" ref={heroRef}>
-      <div className="container mx-auto px-4 md:px-6 py-16 md:py-24 h-full relative z-10">
-        <div className="flex flex-col md:flex-row h-full items-center">
-          {/* Text Content */}
-          <div className="w-full md:w-1/2 mb-10 md:mb-0">
-            <div className="max-w-xl">
-              <div className="inline-flex items-center justify-center px-4 py-1.5 mb-6 border border-gray-200 rounded-full text-sm font-medium bg-white/80 backdrop-blur-sm">
-                <span className="relative flex h-2 w-2 mr-2">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
-                  <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
-                </span>
-                {getGreeting()} • We're live on air
-              </div>
-              
-              <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6">
-                Swahilipot FM
-              </h1>
-              
-              <p className="text-lg md:text-xl text-gray-700 mb-8">
-                A community radio station that brings you the latest news, music, and cultural programs. Our mission is to entertain, inform, and connect the youth and community at large.
-              </p>
-              
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" className="rounded-full font-medium bg-[#271d73] text-white hover:bg-[#2295e2] h-12 px-8">
-                  <Link to="/about">About Swahilipot FM</Link>
-                </Button>
-                <Button variant="outline" size="lg" className="rounded-full font-medium border-gray-300 h-12 px-8" asChild>
-                  <Link to="/schedule">View Schedule</Link>
-                </Button>
-              </div>
+    <section className="relative min-h-[600px] md:min-h-[850px] flex items-center justify-center" ref={heroRef}>
+      {/* Background Carousel */}
+      <div className="absolute inset-0 w-full h-full overflow-hidden">
+        <Slider {...settings} className="w-full h-full">
+          {mockImages.map((image, index) => (
+            <div key={index} className="w-full h-full">
+              <img src={image} alt={`Slide ${index + 1}`} className="w-full h-full object-cover" />
             </div>
+          ))}
+        </Slider>
+        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+      </div>
+      {/* Content */}
+      <div className="relative z-10 text-center text-white px-6">
+        <div className="max-w-xl mx-auto">
+          <div className="inline-flex items-center justify-center px-4 py-1.5 mb-6 border border-gray-200 rounded-full text-sm font-medium bg-white/80 backdrop-blur-sm text-black">
+            <span className="relative flex h-2 w-2 mr-2">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
+            </span>
+            {getGreeting()} • We're live on air
           </div>
-          
-          {/* Live Video Stream */}
-          <div className="w-full md:w-1/2">
-            <div className="bg-black rounded-xl overflow-hidden shadow-xl h-[300px] md:h-[400px]">
-                <div className="relative w-full h-full flex items-center justify-center">
-                <iframe 
-                  src="https://player.restream.io/?token=68d2f8a7eac34f1c849a452c55ac1287&autoplay=1" 
-                  className="absolute inset-0 w-full h-full border-0" 
-                  allow="autoplay" 
-                  title="Swahilipot FM Live Stream"
-                ></iframe>
-                </div>
-            </div>
+          <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6">
+            Swahilipot FM
+          </h1>
+          <p className="text-lg md:text-xl text-gray-200 mb-8">
+            A community radio station that brings you the latest news, music, and cultural programs. Our mission is to entertain, inform, and connect the youth and community at large.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button size="lg" className="rounded-full font-medium bg-white text-black hover:bg-gray-300 h-12 px-8">
+              <Play className="mr-2 h-4 w-4" />
+              <Link to="/live">Watch Live</Link>
+            </Button>
+            <Button size="lg" className="rounded-full font-medium bg-[#271d73] hover:bg-[#2295e2] border-white h-12 px-8 text-white" asChild>
+              <Link to="/schedule">View Schedule</Link>
+            </Button>
           </div>
         </div>
       </div>
