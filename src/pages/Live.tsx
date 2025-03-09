@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const Video = () => {
     return (
-        <div className="container md:min-h-screen mx-auto px-4 py-8">
+        <div className="container md:min-h-screen mb-12 mx-auto px-4 py-8">
             <div className="mb-6">
                 <Button variant="ghost" className="rounded-full pl-3" asChild>
                     <Link to="/">

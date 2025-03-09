@@ -1,4 +1,4 @@
-
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useState, useRef, useEffect } from 'react';
 import { Play, Pause, SkipBack, SkipForward, Volume2, Volume1, VolumeX } from 'lucide-react';
 import { Slider } from "@/components/ui/slider";
@@ -15,9 +15,11 @@ const AudioPlayer: React.FC = () => {
     const hour = now.getHours();
     const day = now.getDay();
 
-    if (day === 6) {
+    if (day === 6) { // Saturday
       if (hour < 11) return "Mikuki ya Maneno";
       if (hour < 14) return "Swahilipot Aroma";
+      return "Vibes and music";
+    } else if (day === 0){  // Sunday
       return "Vibes and music";
     } else {
       if (hour < 10) return "The Breakfast Club";

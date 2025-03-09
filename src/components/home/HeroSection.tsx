@@ -28,24 +28,31 @@ const HeroSection = () => {
     arrows: false,
   };
 
-  const mockImages = [
+  const showBanners = [
     "/show-banners/breakfast-club.png",
     "/show-banners/swahilipot-aroma.png",
+    "/show-banners/swahilipot-aroma.png",
+    "/show-banners/swahilipot-drive.png",
     "/show-banners/mikuki-ya-maneno.png",
   ];
 
   return (
-    <section className="relative min-h-[600px] md:min-h-[850px] flex items-center justify-center" ref={heroRef}>
+    <section className="relative min-h-[600px] md:min-h-[800px] flex items-center justify-center" ref={heroRef}>
       {/* Background Carousel */}
-      <div className="absolute inset-0 w-full h-full overflow-hidden">
+      <div className="absolute md:opacity-1 inset-0 w-full h-full overflow-hidden">
         <Slider {...settings} className="w-full h-full">
-          {mockImages.map((image, index) => (
+          {showBanners.map((image, index) => (
             <div key={index} className="w-full h-full">
               <img src={image} alt={`Slide ${index + 1}`} className="w-full h-full object-cover" />
             </div>
           ))}
         </Slider>
         <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+      </div>
+      {/* Added this to counter the issue with large whitespace when banners can't fit for smaller screens. This shows a theme blue background with the radio logo */}
+      <div className="absolute md:opacity-0 opacity-1 inset-0 w-full h-full overflow-hidden flex items-center justify-center">
+        <div className="absolute inset-0 bg-[#2295e2] bg-opacity-100"></div>
+        <img src="/logos/swahilipot-fm-864.png" alt="Swahilipot FM Logo" className="relative z-10 w-full h-auto object-contain" />
       </div>
       {/* Content */}
       <div className="relative z-10 text-center text-white px-6">
