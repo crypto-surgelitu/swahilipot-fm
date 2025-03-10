@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { MapPin, Phone, Mail, Clock, Send, ArrowRight, CheckCircle } from 'lucide-react';
 import { Button } from "@/components/ui/button";
@@ -142,7 +141,7 @@ const Contact = () => {
                       />
                     </div>
                     
-                    <Button type="submit" className="w-full rounded-full bg-black hover:bg-gray-900">
+                    <Button type="submit" className="w-full rounded-full bg-[#271d73] hover:bg-[#2295e2]">
                       Send Message <Send className="ml-2 h-4 w-4" />
                     </Button>
                   </form>

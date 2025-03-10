@@ -1,11 +1,9 @@
-
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ChevronRight, Search, Tag } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
-import { Separator } from "@/components/ui/separator";
 
 const News = () => {
   const [searchQuery, setSearchQuery] = useState('');
@@ -23,7 +21,7 @@ const News = () => {
   const categories = Array.from(new Set(newsArticles.map(article => article.category)));
   
   return (
-    <div className="container mx-auto px-4 md:px-6 py-12 md:py-16">
+    <div className="container mx-auto px-4 md:px-6 py-12 md:py-16 mb-10">
       <div className="max-w-7xl mx-auto">
         {/* Page Header */}
         <div className="text-center mb-12 md:mb-16">
@@ -103,7 +101,7 @@ const News = () => {
                 <div className="space-y-2">
                   <Button
                     variant={activeCategory === null ? "default" : "ghost"}
-                    className={`w-full justify-start ${activeCategory === null ? 'bg-black text-white' : ''}`}
+                    className={`w-full justify-start ${activeCategory === null ? 'bg-[#271d73] hover:bg-[#2295e2] text-white' : ''}`}
                     onClick={() => setActiveCategory(null)}
                   >
                     <Tag className="mr-2 h-4 w-4" /> All Categories
@@ -112,7 +110,7 @@ const News = () => {
                     <Button
                       key={index}
                       variant={activeCategory === category ? "default" : "ghost"}
-                      className={`w-full justify-start ${activeCategory === category ? 'bg-black text-white' : ''}`}
+                      className={`w-full justify-start ${activeCategory === category ? 'bg-[#271d73] hover:bg-[#2295e2] text-white' : ''}`}
                       onClick={() => setActiveCategory(category)}
                     >
                       <Tag className="mr-2 h-4 w-4" /> {category}
