@@ -53,7 +53,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav className="hidden md:flex items-center space-x-4">
             <Link to="/" className={`nav-link ${isActive('/') ? 'active' : ''}`}>
               Home
             </Link>
@@ -62,6 +62,9 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
             </Link>
             <Link to="/about" className={`nav-link ${isActive('/about') ? 'active' : ''}`}>
               About Us
+            </Link>
+            <Link to="/presenters" className={`nav-link ${isActive('/schedule') ? 'active' : ''}`}>
+              Presenters
             </Link>
             <Link to="/schedule" className={`nav-link ${isActive('/schedule') ? 'active' : ''}`}>
               Schedule
@@ -114,6 +117,9 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
             </Link>
             <Link to="/news" className={`text-2xl font-medium ${isActive('/news') ? 'text-black' : 'text-gray-600'}`}>
               News
+            </Link>
+            <Link to="/presenters" className={`nav-link ${isActive('/schedule') ? 'active' : ''}`}>
+              Presenters
             </Link>
             <Link to="/schedule" className={`text-2xl font-medium ${isActive('/schedule') ? 'text-black' : 'text-gray-600'}`}>
               Schedule
