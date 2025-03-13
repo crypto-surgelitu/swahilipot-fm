@@ -13,6 +13,8 @@ import Contact from "./pages/Contact";
 import Schedule from "./pages/Schedule";
 import NotFound from "./pages/NotFound";
 import Live from "./pages/Live";
+import Presenters from "./pages/Presenters";
+import PresenterDetail from "./pages/PresenterDetail";
 
 const queryClient = new QueryClient();
 
@@ -31,6 +33,8 @@ const App = () => (
               <Route path="/contact" element={<Contact />} />
               <Route path="/schedule" element={<Schedule />} />
               <Route path="/live" element={<Live />} />
+              <Route path="/presenters" element={<Presenters />} />
+              <Route path="/presenters/:id" element={<PresenterDetail />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </Layout>
