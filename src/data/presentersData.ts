@@ -5,6 +5,7 @@ export interface Presenter {
     image: string;
     bio: string;
     socialLinks?: {
+      youtube: string;
       twitter?: string;
       instagram?: string;
       linkedin?: string;
@@ -20,10 +21,10 @@ export interface Presenter {
       role: "Morning Host",
       image: "https://placehold.co/400",
       bio: "Alex Rivera is the energetic voice that wakes up the city every weekday morning. With over a decade of experience in radio broadcasting, Alex brings a perfect blend of humor, insights, and the latest hits to start your day right. Known for his engaging interviews and authentic personality, Alex has become a staple in morning routines across the region. When not behind the microphone, he enjoys hiking, cooking, and volunteering at local community events.",
-      socialLinks: {
-        twitter: "https://twitter.com/alexrivera",
-        instagram: "https://instagram.com/alexrivera",
-      },
+      // socialLinks: {
+      //   twitter: "https://twitter.com/alexrivera",
+      //   instagram: "https://instagram.com/alexrivera",
+      // },
       showIds: ["the-breakfast-club"]
     },
     {
@@ -40,22 +41,22 @@ export interface Presenter {
       role: "Morning Host",
       image: "https://placehold.co/400",
       bio: "Morgan Chen hosts our popular lunchtime talk show, bringing insightful conversations and thought-provoking topics to our listeners daily. With a background in journalism and psychology, Morgan has a unique ability to connect with guests from all walks of life and draw out fascinating stories. Their interview style is both compassionate and direct, creating moments of authentic revelation that listeners have come to cherish. Outside the studio, Morgan is an avid rock climber, sci-fi enthusiast, and mentor for aspiring broadcasters.",
-      socialLinks: {
-        twitter: "https://twitter.com/morgantalkshow",
-        website: "https://morganchenmedia.com"
-      },
+      // socialLinks: {
+      //   twitter: "https://twitter.com/morgantalkshow",
+      //   website: "https://morganchenmedia.com"
+      // },
       showIds: ["the-breakfast-club"]
     },
     {
-        id: "emmanuel-gona",
-        name: "Emmanuel Gona",
-        role: "Morning Host",
-        image: "https://placehold.co/400",
+      id: "japheth-makanaki",
+      name: "Japheth Makanaki",
+      role: "Sports Analyst and Host",
+      image: "https://placehold.co/400",
         bio: "Morgan Chen hosts our popular lunchtime talk show, bringing insightful conversations and thought-provoking topics to our listeners daily. With a background in journalism and psychology, Morgan has a unique ability to connect with guests from all walks of life and draw out fascinating stories. Their interview style is both compassionate and direct, creating moments of authentic revelation that listeners have come to cherish. Outside the studio, Morgan is an avid rock climber, sci-fi enthusiast, and mentor for aspiring broadcasters.",
-        socialLinks: {
-          twitter: "https://twitter.com/morgantalkshow",
-          website: "https://morganchenmedia.com"
-        },
+        // socialLinks: {
+        //   twitter: "https://twitter.com/morgantalkshow",
+        //   website: "https://morganchenmedia.com"
+        // },
         showIds: ["the-breakfast-club"]
       },
       {
@@ -64,10 +65,10 @@ export interface Presenter {
         role: "Sports Analyst and Host",
         image: "https://placehold.co/400",
         bio: "Morgan Chen hosts our popular lunchtime talk show, bringing insightful conversations and thought-provoking topics to our listeners daily. With a background in journalism and psychology, Morgan has a unique ability to connect with guests from all walks of life and draw out fascinating stories. Their interview style is both compassionate and direct, creating moments of authentic revelation that listeners have come to cherish. Outside the studio, Morgan is an avid rock climber, sci-fi enthusiast, and mentor for aspiring broadcasters.",
-        socialLinks: {
-          twitter: "https://twitter.com/morgantalkshow",
-          website: "https://morganchenmedia.com"
-        },
+        // socialLinks: {
+        //   twitter: "https://twitter.com/morgantalkshow",
+        //   website: "https://morganchenmedia.com"
+        // },
         showIds: ["kick-off"]
       },
       {
@@ -76,10 +77,10 @@ export interface Presenter {
         role: "Talk Show Host",
         image: "https://placehold.co/400",
         bio: "Morgan Chen hosts our popular lunchtime talk show, bringing insightful conversations and thought-provoking topics to our listeners daily. With a background in journalism and psychology, Morgan has a unique ability to connect with guests from all walks of life and draw out fascinating stories. Their interview style is both compassionate and direct, creating moments of authentic revelation that listeners have come to cherish. Outside the studio, Morgan is an avid rock climber, sci-fi enthusiast, and mentor for aspiring broadcasters.",
-        socialLinks: {
-          twitter: "https://twitter.com/morgantalkshow",
-          website: "https://morganchenmedia.com"
-        },
+        // socialLinks: {
+        //   twitter: "https://twitter.com/morgantalkshow",
+        //   website: "https://morganchenmedia.com"
+        // },
         showIds: ["swahilipot-cafe"]
       },
       {
@@ -89,8 +90,7 @@ export interface Presenter {
         image: "https://placehold.co/400",
         bio: "Morgan Chen hosts our popular lunchtime talk show, bringing insightful conversations and thought-provoking topics to our listeners daily. With a background in journalism and psychology, Morgan has a unique ability to connect with guests from all walks of life and draw out fascinating stories. Their interview style is both compassionate and direct, creating moments of authentic revelation that listeners have come to cherish. Outside the studio, Morgan is an avid rock climber, sci-fi enthusiast, and mentor for aspiring broadcasters.",
         socialLinks: {
-          twitter: "https://twitter.com/morgantalkshow",
-          website: "https://morganchenmedia.com"
+          youtube: "https://www.youtube.com/@vdjkams", 
         },
         showIds: ["swahilipot-cafe"]
       },
@@ -100,10 +100,10 @@ export interface Presenter {
         role: "Drive Show Host",
         image: "https://placehold.co/400",
         bio: "Morgan Chen hosts our popular lunchtime talk show, bringing insightful conversations and thought-provoking topics to our listeners daily. With a background in journalism and psychology, Morgan has a unique ability to connect with guests from all walks of life and draw out fascinating stories. Their interview style is both compassionate and direct, creating moments of authentic revelation that listeners have come to cherish. Outside the studio, Morgan is an avid rock climber, sci-fi enthusiast, and mentor for aspiring broadcasters.",
-        socialLinks: {
-          twitter: "https://twitter.com/morgantalkshow",
-          website: "https://morganchenmedia.com"
-        },
+        // socialLinks: {
+        //   twitter: "https://twitter.com/morgantalkshow",
+        //   website: "https://morganchenmedia.com"
+        // },
         showIds: ["swahilipot-drive-show", "swahilipot-aroma"]
       },
       {
@@ -112,10 +112,10 @@ export interface Presenter {
         role: "Drive Show Host",
         image: "https://placehold.co/400",
         bio: "Morgan Chen hosts our popular lunchtime talk show, bringing insightful conversations and thought-provoking topics to our listeners daily. With a background in journalism and psychology, Morgan has a unique ability to connect with guests from all walks of life and draw out fascinating stories. Their interview style is both compassionate and direct, creating moments of authentic revelation that listeners have come to cherish. Outside the studio, Morgan is an avid rock climber, sci-fi enthusiast, and mentor for aspiring broadcasters.",
-        socialLinks: {
-          twitter: "https://twitter.com/morgantalkshow",
-          website: "https://morganchenmedia.com"
-        },
+        // socialLinks: {
+        //   twitter: "https://twitter.com/morgantalkshow",
+        //   website: "https://morganchenmedia.com"
+        // },
         showIds: ["swahilipot-drive-show"]
       },
       {
@@ -125,11 +125,11 @@ export interface Presenter {
         image: "https://placehold.co/400",
         bio: "Morgan Chen hosts our popular lunchtime talk show, bringing insightful conversations and thought-provoking topics to our listeners daily. With a background in journalism and psychology, Morgan has a unique ability to connect with guests from all walks of life and draw out fascinating stories. Their interview style is both compassionate and direct, creating moments of authentic revelation that listeners have come to cherish. Outside the studio, Morgan is an avid rock climber, sci-fi enthusiast, and mentor for aspiring broadcasters.",
         socialLinks: {
-          twitter: "https://twitter.com/morgantalkshow",
-          website: "https://morganchenmedia.com"
+          youtube: "https://www.youtube.com/@Djspinking",
         },
         showIds: ["swahilipot-drive-show"]
-      },
+      }
+      
   ];
   
   export const getPresenterById = (id: string): Presenter | undefined => {
