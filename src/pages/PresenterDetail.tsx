@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
-import { ArrowLeft, User, Radio, Twitter, Instagram, Linkedin, Globe } from 'lucide-react';
+import { ArrowLeft, User, Radio, Twitter, Instagram, Youtube, Linkedin, Globe } from 'lucide-react';
 import { getPresenterById, getPresentersByShowId } from '@/data/presentersData';
 import { allShows } from '@/data/scheduleData';
 import { Button } from '@/components/ui/button';
@@ -67,6 +67,16 @@ const PresenterDetail = () => {
                                         className="p-2 rounded-full hover:bg-muted transition-colors"
                                     >
                                         <Twitter className="h-5 w-5" />
+                                    </a>
+                                )}
+                                {presenter.socialLinks.youtube && (
+                                    <a 
+                                        href={presenter.socialLinks.youtube} 
+                                        target="_blank" 
+                                        rel="noopener noreferrer"
+                                        className="p-2 rounded-full hover:bg-muted transition-colors"
+                                    >
+                                        <Youtube className="h-5 w-5" />
                                     </a>
                                 )}
                                 {presenter.socialLinks.instagram && (
