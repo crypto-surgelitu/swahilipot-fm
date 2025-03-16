@@ -67,7 +67,7 @@ const Contact = () => {
                 </div>
                 <div className="flex items-center gap-2">
                   <Mail className="h-4 w-4" />
-                  <span>info@swahilipotfm.co.ke</span>
+                  <span>miriam@swahilipothub.co.ke</span>
                 </div>
               </div>
             </div>
@@ -246,7 +246,7 @@ const Contact = () => {
                       </div>
                       <div>
                         <p className="font-medium">Email Us</p>
-                        <a href="mailto:info@swahilipotfm.co.ke" className="text-gray-600">info@swahilipotfm.co.ke</a>
+                        <a href="mailto:miriam@swahilipothub.co.ke" className="text-gray-600">miriam@swahilipothub.co.ke</a>
                       </div>
                     </div>
                   </div>
@@ -317,7 +317,7 @@ const faqs = [
   },
   {
     question: "Do you offer internships or job opportunities?",
-    answer: "We periodically offer internships and industrial attachment. Just send your resume to info@swahilipotfm.co.ke."
+    answer: "We periodically offer internships and industrial attachment. Just send your resume to miriam@swahilipothub.co.ke."
   }
 ];
 

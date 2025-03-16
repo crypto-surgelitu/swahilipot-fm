@@ -126,24 +126,7 @@ const AudioPlayer: React.FC = () => {
           </div>
           
           {/* Controls */}
-          <div className="flex items-center gap-2 md:gap-4">
-            <TooltipProvider>
-              <Tooltip>
-                <TooltipTrigger asChild>
-                  <button
-                    className="hidden md:flex h-8 w-8 items-center justify-center rounded-full transition-colors hover:bg-gray-200"
-                    onClick={() => {}}
-                    aria-label="Previous"
-                  >
-                    <SkipBack className="h-5 w-5" />
-                  </button>
-                </TooltipTrigger>
-                <TooltipContent side="top">
-                  <p>Previous station</p>
-                </TooltipContent>
-              </Tooltip>
-            </TooltipProvider>
-            
+          <div className="flex items-center gap-2 md:gap-4">         
             <TooltipProvider>
               <Tooltip>
                 <TooltipTrigger asChild>
@@ -157,23 +140,6 @@ const AudioPlayer: React.FC = () => {
                 </TooltipTrigger>
                 <TooltipContent side="top">
                   <p>{isPlaying ? "Pause" : "Play"}</p>
-                </TooltipContent>
-              </Tooltip>
-            </TooltipProvider>
-            
-            <TooltipProvider>
-              <Tooltip>
-                <TooltipTrigger asChild>
-                  <button
-                    className="hidden md:flex h-8 w-8 items-center justify-center rounded-full transition-colors hover:bg-gray-200"
-                    onClick={() => {}}
-                    aria-label="Next"
-                  >
-                    <SkipForward className="h-5 w-5" />
-                  </button>
-                </TooltipTrigger>
-                <TooltipContent side="top">
-                  <p>Next station</p>
                 </TooltipContent>
               </Tooltip>
             </TooltipProvider>
