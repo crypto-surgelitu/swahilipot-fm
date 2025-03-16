@@ -5,6 +5,7 @@ export interface Presenter {
     image: string;
     bio: string;
     socialLinks?: {
+      youtube: string;
       twitter?: string;
       instagram?: string;
       linkedin?: string;
@@ -82,6 +83,9 @@ export interface Presenter {
         Dj Kams has become a beloved voice in the community. He brings a wealth of experience to the airwaves, having worked in radio for over \
         a decade. Dj Kams is passionate about social justice and community empowerment, and he uses his platform to raise awareness of important \
         issues. In his free time, he enjoys hiking, reading, and spending time with his family.",
+        socialLinks: {
+          youtube: "https://www.youtube.com/@vdjkams", 
+        },
         showIds: ["swahilipot-cafe"]
       },
       {
@@ -98,10 +102,6 @@ export interface Presenter {
         role: "Drive Show Host",
         image: "https://placehold.co/400",
         bio: "CJ Bawazir hosts the Swahilipot Drive show.",
-        socialLinks: {
-          twitter: "https://twitter.com/morgantalkshow",
-          website: "https://morganchenmedia.com"
-        },
         showIds: ["swahilipot-drive-show"]
       },
       {
@@ -110,8 +110,12 @@ export interface Presenter {
         role: "Show DJ",
         image: "https://placehold.co/400",
         bio: "DJ Spinking is the co-host and DJ for the Swahilipot Drive show.",
+        socialLinks: {
+          youtube: "https://www.youtube.com/@Djspinking",
+        },
         showIds: ["swahilipot-drive-show"]
-      },
+      }
+      
   ];
   
   export const getPresenterById = (id: string): Presenter | undefined => {
