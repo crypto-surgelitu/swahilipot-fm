@@ -27,7 +27,7 @@ const LatestNewsSection: React.FC<LatestNewsSectionProps> = ({ latestNews }) => 
           </Link>
         </div>
         
-        {latestNews.length > 0 ? (
+        {latestNews.length < 0 ? (
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {latestNews.map((article, index) => (
               <div key={index} className="scroll-animation" style={{ transitionDelay: `${index * 100}ms` }}>
