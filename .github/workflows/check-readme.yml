@@ -1,0 +1,22 @@
+name: Check README
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  check-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Check README.md changes
+        run: |
+          changed_files=$(git diff --name-only ${{ github.event.pull_request.base.sha }} ${{ github.event.pull_request.head.sha }})
+          if ! echo "$changed_files" | grep -q "^README.md$"; then
+            echo "Please update your changes in the README file."
+            exit 1
+          fi
+          

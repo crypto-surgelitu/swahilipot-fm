@@ -1,19 +1,19 @@
-import React, { useRef } from "react";
-import Slider from "react-slick";
-import { Play } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import React, { useRef } from 'react';
+import Slider from 'react-slick';
+import { Play } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 const HeroSection = () => {
   const heroRef = useRef<HTMLElement>(null);
 
   const getGreeting = () => {
     const hour = new Date().getHours();
-    if (hour < 12) return "Good morning";
-    if (hour < 18) return "Good afternoon";
-    return "Good evening";
+    if (hour < 12) return 'Good morning';
+    if (hour < 18) return 'Good afternoon';
+    return 'Good evening';
   };
 
   const settings = {
@@ -29,54 +29,74 @@ const HeroSection = () => {
   };
 
   const showBanners = [
-    "/show-banners/breakfast-club.png",
-    "/show-banners/swahilipot-aroma.png",
-    "/show-banners/swahilipot-aroma.png",
-    "/show-banners/swahilipot-drive.png",
-    "/show-banners/mikuki-ya-maneno.png",
+    '/show-banners/breakfast-club.png',
+    '/show-banners/swahilipot-aroma.png',
+    '/show-banners/swahilipot-aroma.png',
+    '/show-banners/swahilipot-drive.png',
+    '/show-banners/mikuki-ya-maneno.png',
   ];
 
   return (
-    <section className="relative min-h-[600px] md:min-h-[800px] flex items-center justify-center" ref={heroRef}>
+    <section
+      className='relative min-h-[600px] md:min-h-[800px] flex items-center justify-center'
+      ref={heroRef}
+    >
       {/* Background Carousel */}
-      <div className="absolute md:opacity-1 inset-0 w-full h-full overflow-hidden">
-        <Slider {...settings} className="w-full h-full">
+      <div className='absolute md:opacity-1 inset-0 w-full h-full overflow-hidden'>
+        <Slider {...settings} className='w-full h-full'>
           {showBanners.map((image, index) => (
-            <div key={index} className="w-full h-full">
-              <img src={image} alt={`Slide ${index + 1}`} className="w-full h-full object-cover" />
+            <div key={index} className='w-full h-full'>
+              <img
+                src={image}
+                alt={`Slide ${index + 1}`}
+                className='w-full h-full object-cover'
+              />
             </div>
           ))}
         </Slider>
-        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div className='absolute inset-0 bg-black bg-opacity-50'></div>
       </div>
       {/* Added this to counter the issue with large whitespace when banners can't fit for smaller screens. This shows a theme blue background with the radio logo */}
-      <div className="absolute md:opacity-0 opacity-1 inset-0 w-full h-full overflow-hidden flex items-center justify-center">
-        <div className="absolute inset-0 bg-[#2295e2] bg-opacity-100"></div>
-        <img src="/logos/swahilipot-fm-864.png" alt="Swahilipot FM Logo" className="relative z-10 w-full h-auto object-contain" />
+      <div className='absolute md:opacity-0 opacity-1 inset-0 w-full h-full overflow-hidden flex items-center justify-center'>
+        <div className='absolute inset-0 bg-[#2295e2] bg-opacity-100'></div>
+        <img
+          src='/logos/swahilipot-fm-864.png'
+          alt='Swahilipot FM Logo'
+          className='relative z-10 w-full h-auto object-contain'
+        />
       </div>
       {/* Content */}
-      <div className="relative z-10 text-center text-white px-6">
-        <div className="max-w-xl mx-auto">
-          <div className="inline-flex items-center justify-center px-4 py-1.5 mb-6 border border-gray-200 rounded-full text-sm font-medium bg-white/80 backdrop-blur-sm text-black">
-            <span className="relative flex h-2 w-2 mr-2">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
+      <div className='relative z-10 text-center text-white px-6'>
+        <div className='max-w-xl mx-auto'>
+          <div className='inline-flex items-center justify-center px-4 py-1.5 mb-6 border border-gray-200 rounded-full text-sm font-medium bg-white/80 backdrop-blur-sm text-black'>
+            <span className='relative flex h-2 w-2 mr-2'>
+              <span className='animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75'></span>
+              <span className='relative inline-flex rounded-full h-2 w-2 bg-red-500'></span>
             </span>
             {getGreeting()} • We're live on air
           </div>
-          <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6">
+          <h1 className='font-display text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6'>
             Swahilipot FM
           </h1>
-          <p className="text-lg md:text-xl text-gray-200 mb-8">
-            A community radio station that brings you the latest news, music, and cultural programs. Our mission is to entertain, inform, and connect the youth and community at large.
+          <p className='text-lg md:text-xl text-gray-200 mb-8'>
+            A community radio station that brings you the latest news, music,
+            and cultural programs. Our mission is to entertain, inform, and
+            connect the youth and community at large.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="rounded-full font-medium bg-white text-black hover:bg-gray-300 h-12 px-8">
-              <Play className="mr-2 h-4 w-4" />
-              <Link to="/live">Watch Live</Link>
+          <div className='flex flex-col sm:flex-row gap-4 justify-center'>
+            <Button
+              size='lg'
+              className='rounded-full font-medium bg-white text-black hover:bg-gray-300 h-12 px-8'
+            >
+              <Play className='mr-2 h-4 w-4' />
+              <Link to='/live'>Watch Live</Link>
             </Button>
-            <Button size="lg" className="rounded-full font-medium bg-[#271d73] hover:bg-[#2295e2] border-white h-12 px-8 text-white" asChild>
-              <Link to="/schedule">View Schedule</Link>
+            <Button
+              size='lg'
+              className='rounded-full font-medium bg-[#271d73] hover:bg-[#2295e2] border-white h-12 px-8 text-white'
+              asChild
+            >
+              <Link to='/schedule'>View Schedule</Link>
             </Button>
           </div>
         </div>

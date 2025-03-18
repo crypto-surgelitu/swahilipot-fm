@@ -1,6 +1,6 @@
 # Swahilipot FM
 
-Swahilipot FM is a community-driven radio station project aimed at providing a platform for local artists, news, and cultural content. This repository contains the source code and documentation for the Swahilipot FM project.
+Source Code for The swahilipot fm site
 
 ## Table of Contents
 
