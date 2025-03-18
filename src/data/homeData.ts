@@ -30,5 +30,5 @@ export const latestNews = [
     date: 'June 15, 2023',
     image:
       'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=800&auto=format&fit=crop',
-  }
+  },
 ];
