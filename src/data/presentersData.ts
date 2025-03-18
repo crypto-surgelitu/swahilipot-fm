@@ -1,26 +1,26 @@
 export interface Presenter {
-  id: string;
-  name: string;
-  role: string;
-  image: string;
-  bio: string;
-  socialLinks?: {
-    youtube: string;
-    twitter?: string;
-    instagram?: string;
-    linkedin?: string;
-    website?: string;
-  };
-  showIds?: string[]; // References to shows the presenters host
-}
-
-export const presenters: Presenter[] = [
-  {
-    id: 'miriam-angil',
-    name: 'Miriam Angil',
-    role: 'Morning Host',
-    image: 'https://placehold.co/400',
-    bio: "Miriam Angil is the host of our flagship morning show, 'The Breakfast Club'. With her infectious energy and engaging personality, \
+    id: string;
+    name: string;
+    role: string;
+    image: string;
+    bio: string;
+    socialLinks?: {
+      youtube: string;
+      twitter?: string;
+      instagram?: string;
+      linkedin?: string;
+      website?: string;
+    };
+    showIds?: string[]; // References to shows the presenters host
+  }
+  
+  export const presenters: Presenter[] = [
+    {
+      id: "miriam-angil",
+      name: "Miriam Angil",
+      role: "Morning Host",
+      image: "https://placehold.co/400",
+      bio: "Miriam Angil is the host of our flagship morning show, 'The Breakfast Club'. With her infectious energy and engaging personality, \
         Miriam has become a beloved voice in the community. She brings a wealth of experience to the airwaves, having worked in radio for over \
         a decade. Miriam is passionate about social justice and community empowerment, and she uses her platform to raise awareness of important \
         issues. In her free time, she enjoys hiking, reading, and spending time with her family.",
