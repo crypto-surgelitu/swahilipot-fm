@@ -44,3 +44,9 @@ Please ensure your code follows our coding standards and includes appropriate te
 
 ## Documentation
 
+>Please make sure you write a two sentence description fo what as done. feature or implementations when creating PR to dev or main branch
+
+
+## Continous Changes
+
+>Update here ...
