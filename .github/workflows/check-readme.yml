@@ -11,6 +11,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
 
       - name: Check README.md changes
         run: |
@@ -19,4 +21,4 @@ jobs:
             echo "Please update your changes in the README file."
             exit 1
           fi
-          
+        shell: /usr/bin/bash -e {0}
