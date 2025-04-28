@@ -14,6 +14,7 @@ import NotFound from './pages/NotFound';
 import Live from './pages/Live';
 import Presenters from './pages/Presenters';
 import PresenterDetail from './pages/PresenterDetail';
+import MusicSurveyForm from '@/pages/MusicSurveyForm.tsx';
 
 const queryClient = new QueryClient();
 
@@ -34,6 +35,7 @@ const App = () => (
               <Route path='/live' element={<Live />} />
               <Route path='/presenters' element={<Presenters />} />
               <Route path='/presenters/:id' element={<PresenterDetail />} />
+              <Route path='/survey-form' element={<MusicSurveyForm/>}/>
               <Route path='*' element={<NotFound />} />
             </Routes>
           </Layout>

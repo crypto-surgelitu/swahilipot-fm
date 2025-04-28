@@ -98,6 +98,13 @@ const HeroSection = () => {
             >
               <Link to='/schedule'>View Schedule</Link>
             </Button>
+            <Button
+              size='lg'
+              className='rounded-full font-medium bg-[#271d73] hover:bg-[#2295e2] border-white h-12 px-8 text-white'
+              asChild
+            >
+              <Link to='/survey-form'>Fill in the Music Analysis Survey</Link>
+            </Button>
           </div>
         </div>
       </div>
