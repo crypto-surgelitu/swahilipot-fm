@@ -1,12 +1,14 @@
 # Swahilipot FM
 
-Source Code for The swahilipot fm site
+Source Code for The Swahilipot FM site
 
 ## Table of Contents
 
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
+- [Documentation](#documentation)
+- [Continuous Changes](#continuous-changes)
 - [License](#license)
 - [Contact](#contact)
 
@@ -44,9 +46,20 @@ Please ensure your code follows our coding standards and includes appropriate te
 
 ## Documentation
 
->Please make sure you write a two sentence description fo what as done. feature or implementations when creating PR to dev or main branch
+> Please make sure you write a two-sentence description of what was done (feature or implementation) when creating a PR to the `dev` or `main` branch.
 
+## Continuous Changes
 
-## Continous Changes
+### Recent Updates
+- **April 28, 2025**: Updated the README file to include a section for documenting recent changes and updates.
+- Added new shows to the schedule data in `scheduleData.ts`.
+- Improved page transitions and animations in `index.css` and `tailwind.config.ts`.
 
->Update here ...
+## License
+
+This project is licensed under the MIT License.
+
+## Contact
+
+For inquiries, please contact us at [info@swahilipot.fm](mailto:info@swahilipot.fm).
+
