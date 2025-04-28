@@ -103,7 +103,7 @@ const HeroSection = () => {
               className='rounded-full font-medium bg-[#271d73] hover:bg-[#2295e2] border-white h-12 px-8 text-white'
               asChild
             >
-              <Link to='/survey-form'>Fill in the Music Analysis Survey</Link>
+              <Link to='/survey-form'>Help fill the SPFM Survey Form</Link>
             </Button>
           </div>
         </div>
