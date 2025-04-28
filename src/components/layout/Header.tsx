@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
-import AudioPlayer from './AudioPlayer';
 import {
   FaFacebook,
   FaInstagram,
@@ -11,11 +10,7 @@ import {
   FaYoutube,
 } from 'react-icons/fa6';
 
-interface LayoutProps {
-  children: React.ReactNode;
-}
-
-const Layout: React.FC<LayoutProps> = ({ children }) => {
+const Header = () => {
   const location = useLocation();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -44,8 +39,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   }, []);
 
   return (
-    <div className='min-h-screen flex flex-col bg-white text-black'>
-      {/* Header */}
+    <>
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           scrolled ? 'glass py-2 shadow-sm' : 'bg-transparent'
@@ -70,12 +64,12 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
             >
               Home
             </Link>
-            <Link
+            {/* <Link
               to='/news'
               className={`nav-link ${isActive('/news') ? 'active' : ''}`}
             >
               News
-            </Link>
+            </Link> */}
             <Link
               to='/about'
               className={`nav-link ${isActive('/about') ? 'active' : ''}`}
@@ -142,7 +136,6 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
           </button>
         </div>
       </header>
-
       {/* Mobile Navigation */}
       {mobileMenuOpen && (
         <motion.div
@@ -218,24 +211,8 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
           </nav>
         </motion.div>
       )}
-
-      {/* Main Content */}
-      <main className='flex-1 pt-24 main-content'>
-        <motion.div
-          key={location.pathname}
-          initial={{ opacity: 0, y: 8 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: 8 }}
-          transition={{ duration: 0.3 }}
-        >
-          {children}
-        </motion.div>
-      </main>
-
-      {/* Audio Player */}
-      <AudioPlayer />
-    </div>
+    </>
   );
 };
 
-export default Layout;
+export default Header;
