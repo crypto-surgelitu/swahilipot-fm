@@ -94,6 +94,12 @@ const Header = () => {
             >
               Contact Us
             </Link>
+            <Link
+              to='/survey-form'
+              className={`nav-link ${isActive('/schedule') ? 'active' : ''}`}
+            >
+              Help fill the SPFM Survey Form
+            </Link>
             <div className='flex gap-3'>
               <Link to='https://www.youtube.com/@swahilipotfm' target='_blank'>
                 <FaYoutube className='text-[#2295e2] h-6 w-6' />
@@ -160,7 +166,7 @@ const Header = () => {
             </Link>
             <Link
               to='/presenters'
-              className={`nav-link ${isActive('/schedule') ? 'active' : ''}`}
+              className={`text-2xl font-medium ${isActive('/contact') ? 'text-black' : 'text-gray-600'}`}
             >
               Presenters
             </Link>
@@ -181,6 +187,12 @@ const Header = () => {
               className={`text-2xl font-medium ${isActive('/contact') ? 'text-black' : 'text-gray-600'}`}
             >
               Contact Us
+            </Link>
+            <Link
+              to='/survey-form'
+              className={`text-2xl font-medium ${isActive('/contact') ? 'text-black' : 'text-gray-600'}`}
+            >
+              Help fill the SPFM Survey
             </Link>
             <div className='flex flex-row gap-3'>
               <Link to='https://www.youtube.com/@swahilipotfm' target='_blank'>
