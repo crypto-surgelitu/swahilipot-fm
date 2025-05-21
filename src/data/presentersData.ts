@@ -91,7 +91,7 @@ export const presenters: Presenter[] = [
     socialLinks: {
       youtube: 'https://www.youtube.com/@vdjkams',
     },
-    showIds: ['swahilipot-cafe', 'swahilipot-mixes'],
+    showIds: ['swahilipot-cafe'],
   },
   {
     id: 'munga-sauti-teule',
@@ -157,7 +157,7 @@ export const presenters: Presenter[] = [
     socialLinks: {
       youtube: 'https://www.youtube.com/@Djspinking',
     },
-    showIds: ['swahilipot-drive-show', 'the-friday-rave'],
+    showIds: ['swahilipot-drive-show'],
   },
  
 ];
