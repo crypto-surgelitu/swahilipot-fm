@@ -41,15 +41,12 @@ const PresenterDetail = () => {
       <div className='grid gap-8 md:grid-cols-3'>
         <div className='md:col-span-1'>
           <div className='sticky top-24'>
-            <div className='aspect-square overflow-hidden rounded-lg mb-6 bg-muted'>
+            <div className='aspect-square overflow-hidden rounded-lg mb-6'>
               {presenter.image ? (
                 <img
-                  src={presenter.image}
+                  src={`https://ui-avatars.com/api/?name=${encodeURIComponent(presenter.name)}&background=random`}
                   alt={presenter.name}
-                  className='object-cover object-center object-[center_30%] w-full h-full'
-                  onError={(e) => {
-                    e.currentTarget.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(presenter.name)}&background=271d73&color=fff&size=400`;
-                  }}
+                  className='object-cover w-full h-full'
                 />
               ) : (
                 <div className='flex items-center justify-center w-full h-full bg-muted'>

@@ -24,21 +24,12 @@ const Presenters = () => {
             key={presenter.id}
             className='overflow-hidden transition-all hover:shadow-lg group'
           >
-            <div className='relative aspect-square overflow-hidden bg-muted'>
-              {presenter.image ? (
-                <img
-                  src={presenter.image}
-                  alt={presenter.name}
-                  className='object-cover object-center w-full h-full group-hover:scale-105 transition-transform duration-300'
-                  onError={(e) => {
-                    e.currentTarget.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(presenter.name)}&background=271d73&color=fff&size=400`;
-                  }}
-                />
-              ) : (
-                <div className='flex items-center justify-center w-full h-full bg-muted'>
-                  <User className='h-24 w-24 text-muted-foreground' />
-                </div>
-              )}
+            <div className='relative aspect-[4/3] overflow-hidden'>
+              <img
+                src={`https://ui-avatars.com/api/?name=${encodeURIComponent(presenter.name)}&background=random`}
+                alt={presenter.name}
+                className='object-cover w-full h-full group-hover:scale-105 transition-transform duration-300'
+              />
             </div>
             <CardContent className='p-6'>
               <h3 className='text-xl font-semibold mb-1'>{presenter.name}</h3>
