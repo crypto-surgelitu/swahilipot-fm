@@ -129,13 +129,27 @@ export const allShows: Show[] = [
     title: 'The Friday Rave',
     host: 'DJ Spinking',
     description:
-      'Enjoy mixes for DJ Spinking as he comes through with segments like Versus, Long and short mixes to get your night going',
+      'Enjoy mixes from DJ Spinking as he comes through with segments like Versus, Long and short mixes to get your night going',
     image:
       '/show-banners/the-friday-rave.png',
     category: 'Music',
     days: ['Friday'],
     startTime: '19:00',
     endTime: '22:00',
+    tags: ['Live Music', 'Song', 'Entertainment'],
+  },
+  {
+    id: 'swahilipot-mixes',
+    title: 'Vibe with Kams in Swahilipot Mixes',
+    host: 'DJ Kams',
+    description:
+      'Vibe with Kams as he mixes music that spans throughout all generations and genres.',
+    image:
+      '/show-banners/swahilipot-mixes.png',
+    category: 'Music',
+    days: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+    startTime: '14:00',
+    endTime: '15:00',
     tags: ['Live Music', 'Song', 'Entertainment'],
   },
   {

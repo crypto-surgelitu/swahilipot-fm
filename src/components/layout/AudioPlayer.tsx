@@ -32,7 +32,7 @@ const AudioPlayer: React.FC = () => {
       // Saturday
       if (hour < 11) return 'Mikuki ya Maneno';
       if (hour < 14) return 'Swahilipot Aroma';
-      if (hour < 19) return 'Swahilipot Aroma';
+      if (hour < 19) return 'Kick-off';
       return 'Vibes and music';
     } else if (day === 0) {
       // Sunday
@@ -42,6 +42,7 @@ const AudioPlayer: React.FC = () => {
       if (hour < 10) return 'The Breakfast Club';
       if (hour < 11) return 'Kick-off';
       if (hour < 14) return 'Swahilipot Cafe';
+      if (hour < 15) return 'Swahilipot Mixes';
       if (hour < 19) return 'Swahilipot Drive';
       if (hour < 22) return 'Friday Rave';
       return 'Vibes and music';
@@ -49,6 +50,7 @@ const AudioPlayer: React.FC = () => {
       if (hour < 10) return 'The Breakfast Club';
       if (hour < 11) return 'Kick-off';
       if (hour < 14) return 'Swahilipot Cafe';
+      if (hour < 15) return 'Swahilipot Mixes';
       if (hour < 19) return 'Swahilipot Drive';
       if (hour < 24) return 'The Night Shift';
       return 'Vibes and music';
