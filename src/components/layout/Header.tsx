@@ -78,7 +78,7 @@ const Header = () => {
             </Link>
             <Link
               to='/presenters'
-              className={`nav-link ${isActive('/schedule') ? 'active' : ''}`}
+              className={`nav-link ${isActive('/presenters') ? 'active' : ''}`}
             >
               Presenters
             </Link>
@@ -96,9 +96,9 @@ const Header = () => {
             </Link>
             <Link
               to='/survey-form'
-              className={`nav-link ${isActive('/schedule') ? 'active' : ''}`}
+              className={`nav-link ${isActive('/survey-form') ? 'active' : ''}`}
             >
-              Help fill the SPFM Survey Form
+              Help fill this Survey
             </Link>
             <div className='flex gap-3'>
               <Link to='https://www.youtube.com/@swahilipotfm' target='_blank'>

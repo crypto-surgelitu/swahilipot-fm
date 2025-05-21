@@ -42,7 +42,7 @@ export const allShows: Show[] = [
     days: ['Monday', 'Tuesday', 'Wednesday', 'Thursday'],
     startTime: '10:00',
     endTime: '11:00',
-    tags: ['News'],
+    tags: ['News', 'Sports'],
   },
   {
     id: 'swahilipot-cafe',
@@ -95,7 +95,7 @@ export const allShows: Show[] = [
     days: ['Saturday'],
     startTime: '15:00',
     endTime: '19:00',
-    tags: ['News'],
+    tags: ['News', 'Sports'],
   },
   {
     id: 'swahilipot-drive-show',
@@ -111,9 +111,37 @@ export const allShows: Show[] = [
     tags: ['Pop', 'Interactive', 'Fun'],
   },
   {
+    id: 'the-night-shift',
+    title: 'The Night Shift',
+    host: 'Tonny Omuga, Mama Zakiya',
+    description:
+      'Dive into all matters surrounding relationships and their ups and downs with Tonny Omuga and Mama Zakiya as they give you insights into how relationships take different faces throughout different generations',
+    image:
+      '/show-banners/the-night-shift.png',
+    category: 'Talk Show',
+    days: ['Monday', 'Tuesday', 'Wednesday', 'Thursday'],
+    startTime: '21:00',
+    endTime: '00:00',
+    tags: ['Talk', 'Relationships', 'Love'],
+  },
+  {
+    id: 'the-friday-rave',
+    title: 'The Friday Rave',
+    host: 'DJ Spinking',
+    description:
+      'Enjoy mixes for DJ Spinking as he comes through with segments like Versus, Long and short mixes to get your night going',
+    image:
+      '/show-banners/the-friday-rave.png',
+    category: 'Music',
+    days: ['Friday'],
+    startTime: '19:00',
+    endTime: '22:00',
+    tags: ['Live Music', 'Song', 'Entertainment'],
+  },
+  {
     id: 'vibes-and-music',
     title: 'Vibes and Music',
-    host: 'DJs, Automated',
+    host: 'DJs Mixes, Automated',
     description:
       'Sit back and enjoy the vibes and music set for the day. Take it easy today and remember to enjoy every minute of the tracks.',
     image:
@@ -122,7 +150,7 @@ export const allShows: Show[] = [
     days: ['Sunday'],
     startTime: '11:00',
     endTime: '14:00',
-    tags: ['Acoustic', 'Folk', 'Live Music'],
+    tags: ['Entertainment', 'Live Music'],
   },
 ];
 
