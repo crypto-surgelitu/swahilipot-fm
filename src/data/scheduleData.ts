@@ -111,6 +111,48 @@ export const allShows: Show[] = [
     tags: ['Pop', 'Interactive', 'Fun'],
   },
   {
+    id: 'the-night-shift',
+    title: 'The Night Shift',
+    host: 'Tonny Omuga, Mama Zakiya',
+    description:
+      'Dive into all matters surrounding relationships and their ups and downs with Tonny Omuga and Mama Zakiya as they give you insights into how relationships take different faces throughout different generations',
+    image:
+      '/show-banners/the-night-shift.png',
+    category: 'Talk Show',
+    days: ['Monday', 'Tuesday', 'Wednesday', 'Thursday'],
+    startTime: '21:00',
+    endTime: '00:00',
+    tags: ['Talk', 'Relationships', 'Love'],
+  },
+  {
+    id: 'the-friday-rave',
+    title: 'The Friday Rave',
+    host: 'DJ Spinking',
+    description:
+      'Enjoy mixes from DJ Spinking as he comes through with segments like Versus, Long and short mixes to get your night going',
+    image:
+      '/show-banners/the-friday-rave.png',
+    category: 'Music',
+    days: ['Friday'],
+    startTime: '19:00',
+    endTime: '22:00',
+    tags: ['Live Music', 'Song', 'Entertainment'],
+  },
+  {
+    id: 'swahilipot-mixes',
+    title: 'Vibe with Kams in Swahilipot Mixes',
+    host: 'DJ Kams',
+    description:
+      'Vibe with Kams as he mixes music that spans throughout all generations and genres.',
+    image:
+      '/show-banners/swahilipot-mixes.png',
+    category: 'Music',
+    days: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+    startTime: '14:00',
+    endTime: '15:00',
+    tags: ['Live Music', 'Song', 'Entertainment'],
+  },
+  {
     id: 'vibes-and-music',
     title: 'Vibes and Music',
     host: 'DJs, Automated',
