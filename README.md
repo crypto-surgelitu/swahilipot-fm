@@ -61,5 +61,5 @@ This project is licensed under the MIT License.
 
 ## Contact
 
-For inquiries, please contact us at [info@swahilipot.fm](mailto:info@swahilipot.fm).
+For inquiries, please contact us at [info@swahilipotfm.co.ke](mailto:info@swahilipotfm.co.ke).
 
