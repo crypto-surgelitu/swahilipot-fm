@@ -139,6 +139,20 @@ export const allShows: Show[] = [
     tags: ['Live Music', 'Song', 'Entertainment'],
   },
   {
+    id: 'request-hour',
+    title: 'Request Hour',
+    host: 'Josh, The Curator',
+    description:
+      'Request your favorite tracks and hear them live on air with Josh, The Curator. Call in or send your requests via social media.',
+    image:
+      '/show-banners/request-hour.png',
+    category: 'Music',
+    days: ['Friday'],
+    startTime: '10:00',
+    endTime: '11:00',
+    tags: ['Song Requests', 'Entertainment'],
+  },
+  {
     id: 'swahilipot-mixes',
     title: 'Vibe with Kams in Swahilipot Mixes',
     host: 'DJ Kams',
