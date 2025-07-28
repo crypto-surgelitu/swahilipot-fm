@@ -115,6 +115,17 @@ export const presenters: Presenter[] = [
     },
     showIds: ['swahilipot-drive-show', 'the-friday-rave'],
   },
+  {
+    id: 'josh-the-curator',
+    name: 'Josh, The Curator',
+    role: 'Producer and Host',
+    image: 'https://placehold.co/400',
+    bio: 'Josh, The Curator is the producer of the Swahilipot Drive show and host of the Request Hour',
+    socialLinks: {
+      instagram: 'https://www.instagram.com/joshthecurator_/',
+    },
+    showIds: ['swahilipot-drive-show', 'request-hour'],
+  },
 ];
 
 export const getPresenterById = (id: string): Presenter | undefined => {
