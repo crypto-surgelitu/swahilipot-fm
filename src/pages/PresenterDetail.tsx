@@ -44,9 +44,10 @@ const PresenterDetail = () => {
             <div className='aspect-square overflow-hidden rounded-lg mb-6'>
               {presenter.image ? (
                 <img
-                  src={`https://ui-avatars.com/api/?name=${encodeURIComponent(presenter.name)}&background=random`}
+                  src={presenter.image}
                   alt={presenter.name}
                   className='object-cover w-full h-full'
+                  loading="lazy"
                 />
               ) : (
                 <div className='flex items-center justify-center w-full h-full bg-muted'>

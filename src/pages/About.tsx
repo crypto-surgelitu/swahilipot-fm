@@ -69,7 +69,7 @@ const About = () => {
             <div className='relative'>
               <div className='rounded-2xl overflow-hidden shadow-lg'>
                 <img
-                  src='/studio/studio2.jpg'
+                  src='/studio/spfm_about.jpg'
                   alt='Radio History'
                   className='w-full aspect-[4/3] object-cover'
                 />
