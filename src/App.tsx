@@ -15,6 +15,7 @@ import Live from './pages/Live';
 import Presenters from './pages/Presenters';
 import PresenterDetail from './pages/PresenterDetail';
 import MusicSurveyForm from '@/pages/MusicSurveyForm.tsx';
+import ComplaintsPage from './pages/Complaints';
 
 const queryClient = new QueryClient();
 
@@ -36,6 +37,7 @@ const App = () => (
               <Route path='/presenters' element={<Presenters />} />
               <Route path='/presenters/:id' element={<PresenterDetail />} />
               <Route path='/survey-form' element={<MusicSurveyForm/>}/>
+              <Route path='/complaints' element={<ComplaintsPage/>} />
               <Route path='*' element={<NotFound />} />
             </Routes>
           </Layout>

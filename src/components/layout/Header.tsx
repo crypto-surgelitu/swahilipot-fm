@@ -95,10 +95,10 @@ const Header = () => {
               Contact Us
             </Link>
             <Link
-              to='/survey-form'
-              className={`nav-link ${isActive('/survey-form') ? 'active' : ''}`}
+              to='/complaints'
+              className={`nav-link ${isActive('/complaints') ? 'active' : ''}`}
             >
-              Help fill the Survey Form
+              File a complaint
             </Link>
             <div className='flex gap-3'>
               <Link to='https://www.youtube.com/@swahilipotfm' target='_blank'>
@@ -189,10 +189,10 @@ const Header = () => {
               Contact Us
             </Link>
             <Link
-              to='/survey-form'
-              className={`text-2xl font-medium ${isActive('/contact') ? 'text-black' : 'text-gray-600'}`}
+              to='/complaints'
+              className={`text-2xl font-medium ${isActive('/complaints') ? 'text-black' : 'text-gray-600'}`}
             >
-              Help fill the SPFM Survey
+              File a complaint
             </Link>
             <div className='flex flex-row gap-3'>
               <Link to='https://www.youtube.com/@swahilipotfm' target='_blank'>
