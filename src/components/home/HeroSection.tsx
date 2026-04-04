@@ -29,7 +29,7 @@ const HeroSection = () => {
   };
 
   const showBanners = [
-    // '/show-banners/breakfast-club.png',
+    '/show-banners/breakfast-club.png',
     '/show-banners/swahilipot-aroma.png',
     '/show-banners/swahilipot-aroma.png',
     '/show-banners/swahilipot-drive.png',
