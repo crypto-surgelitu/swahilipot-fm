@@ -64,13 +64,13 @@ export const presenters: Presenter[] = [
     showIds: ['swahilipot-cafe'],
   },
   {
-    id: 'vdj-kams',
-    name: 'VDJ Kams',
+    id: 'dj-kams',
+    name: 'DJ Kams',
     role: 'Show DJ',
     image: '/presenters/dj_kams.jpg',
-    bio: 'VDJ Kams is the co-host and DJ for the Swahilipot Cafe show. With his infectious energy and engaging personality, \
-      VDJ Kams has become a beloved voice in the community. He brings a wealth of experience to the airwaves, having worked in radio for over \
-      a decade. VDJ Kams is passionate about social justice and community empowerment, and he uses his platform to raise awareness of important \
+    bio: 'Dj Kams is the co-host and DJ for the Swahilipot Cafe show. With his infectious energy and engaging personality, \
+      Dj Kams has become a beloved voice in the community. He brings a wealth of experience to the airwaves, having worked in radio for over \
+      a decade. Dj Kams is passionate about social justice and community empowerment, and he uses his platform to raise awareness of important \
       issues. In his free time, he enjoys hiking, reading, and spending time with his family.',
     socialLinks: {
       youtube: 'https://www.youtube.com/@vdjkams',
@@ -130,22 +130,6 @@ export const presenters: Presenter[] = [
     image: '/presenters/tonny_omuga.jpg',
     bio: 'Tonny Omuga is the host of the late night show, The Night Shift. Stay tuned as he keeps locked with good quotes and content on relationships.',
     showIds: ['the-night-shift'],
-  },
-  {
-    id: 'bahati-ngazi',
-    name: 'Bahati Ngazi',
-    role: 'Host',
-    image: '/presenters/bahati_ngazi.jpg',
-    bio: 'Bahati Ngazi is the co-host of the late night show, The Night Shift. Bringing unique perspectives and engaging content to keep listeners entertained through the night.',
-    showIds: ['the-night-shift'],
-  },
-  {
-    id: 'cardiac-poet',
-    name: 'Cardiac Poet',
-    role: 'Drive Show Host',
-    image: '/presenters/cardiac_poet.jpg',
-    bio: 'Cardiac Poet is the co-host of Swahilipot Drive, bringing poetic flair and engaging conversation to the afternoon drive time show.',
-    showIds: ['swahilipot-drive-show'],
   },
   {
     id: 'shufaa-yakut',

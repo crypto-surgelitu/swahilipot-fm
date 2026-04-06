@@ -47,9 +47,9 @@ export const allShows: Show[] = [
   {
     id: 'swahilipot-cafe',
     title: 'Swahilipot Cafe',
-    host: 'Dorcas Uwiyera, VDJ Kams',
+    host: 'Dorcas Uwiyera, DJ Kams',
     description:
-      'Join Dorcas Uwiyera and VDJ Kams for a midday mix of music, talk, and entertainment, with the best vibes to keep you going.',
+      'Join Dorcas Uwiyera and DJ Kams for a mix of music, talk, and entertainment, with the best music to keep you company.',
     image: '/show-banners/swahilipot-cafe.png',
     category: 'Talk Show',
     days: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
@@ -99,10 +99,10 @@ export const allShows: Show[] = [
   },
   {
     id: 'swahilipot-drive-show',
-    title: 'Swahilipot Drive',
-    host: 'Munga Sauti Teule, CJ Bawazir, Cardiac Poet',
+    title: 'Swahilipot Drive Show',
+    host: 'Munga Sauti Teule, CJ Bawazir',
     description:
-      'Join Munga Sauti Teule, CJ Bawazir, and Cardiac Poet for the ultimate drive time experience with great music and engaging conversations.',
+      'Beat the afternoon slump with upbeat tracks, fun games, and listener call-ins with the energetic Jordan Taylor.',
     image: '/show-banners/swahilipot-drive.png',
     category: 'Drive Show',
     days: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
@@ -113,16 +113,16 @@ export const allShows: Show[] = [
   {
     id: 'the-night-shift',
     title: 'The Night Shift',
-    host: 'Mama Zakiya, Tonny Omuga, Bahati Ngazi',
+    host: 'Tonny Omuga, Mama Zakiya',
     description:
-      'Join Mama Zakiya, Tonny Omuga, and Bahati Ngazi for late night conversations and entertainment that keeps you company through the night.',
+      'Dive into all matters surrounding relationships and their ups and downs with Tonny Omuga and Mama Zakiya as they give you insights into how relationships take different faces throughout different generations',
     image:
       '/show-banners/the-night-shift.png',
     category: 'Talk Show',
     days: ['Monday', 'Tuesday', 'Wednesday', 'Thursday'],
     startTime: '21:00',
     endTime: '00:00',
-    tags: ['Talk', 'Entertainment', 'Night Show'],
+    tags: ['Talk', 'Relationships', 'Love'],
   },
   {
     id: 'the-friday-rave',
