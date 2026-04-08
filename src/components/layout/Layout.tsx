@@ -14,7 +14,9 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <div className='min-h-screen flex flex-col bg-white text-black'>
       <Header />
-      <main className='flex-1 pt-24 mb-10 main-content'> {/* Change the spacing to work for all pages */}
+      <main className='flex-1 pt-24 mb-10 main-content'>
+        {' '}
+        {/* Change the spacing to work for all pages */}
         <motion.div
           key={location.pathname}
           initial={{ opacity: 0, y: 8 }}

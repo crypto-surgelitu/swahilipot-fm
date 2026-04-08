@@ -36,8 +36,8 @@ const App = () => (
               <Route path='/live' element={<Live />} />
               <Route path='/presenters' element={<Presenters />} />
               <Route path='/presenters/:id' element={<PresenterDetail />} />
-              <Route path='/survey-form' element={<MusicSurveyForm/>}/>
-              <Route path='/complaints' element={<ComplaintsPage/>} />
+              <Route path='/survey-form' element={<MusicSurveyForm />} />
+              <Route path='/complaints' element={<ComplaintsPage />} />
               <Route path='*' element={<NotFound />} />
             </Routes>
           </Layout>

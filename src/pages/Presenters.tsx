@@ -26,10 +26,14 @@ const Presenters = () => {
           >
             <div className='relative aspect-square overflow-hidden'>
               <img
-                src={presenter.image ? presenter.image : `https://ui-avatars.com/api/?name=${encodeURIComponent(presenter.name)}&background=random`}
+                src={
+                  presenter.image
+                    ? presenter.image
+                    : `https://ui-avatars.com/api/?name=${encodeURIComponent(presenter.name)}&background=random`
+                }
                 alt={presenter.name}
                 className='object-cover w-full h-full group-hover:scale-105 transition-transform duration-300'
-                loading="lazy"
+                loading='lazy'
               />
             </div>
             <CardContent className='p-6'>

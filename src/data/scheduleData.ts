@@ -116,8 +116,7 @@ export const allShows: Show[] = [
     host: 'Tonny Omuga, Mama Zakiya',
     description:
       'Dive into all matters surrounding relationships and their ups and downs with Tonny Omuga and Mama Zakiya as they give you insights into how relationships take different faces throughout different generations',
-    image:
-      '/show-banners/the-night-shift.png',
+    image: '/show-banners/the-night-shift.png',
     category: 'Talk Show',
     days: ['Monday', 'Tuesday', 'Wednesday', 'Thursday'],
     startTime: '21:00',
@@ -130,8 +129,7 @@ export const allShows: Show[] = [
     host: 'DJ Spinking',
     description:
       'Enjoy mixes from DJ Spinking as he comes through with segments like Versus, Long and short mixes to get your night going',
-    image:
-      '/show-banners/the-friday-rave.png',
+    image: '/show-banners/the-friday-rave.png',
     category: 'Music',
     days: ['Friday'],
     startTime: '19:00',
@@ -144,8 +142,7 @@ export const allShows: Show[] = [
     host: 'Josh, The Curator',
     description:
       'Request your favorite tracks and hear them live on air with Josh, The Curator. Call in or send your requests via social media.',
-    image:
-      '/show-banners/request-hour.png',
+    image: '/show-banners/request-hour.png',
     category: 'Music',
     days: ['Friday'],
     startTime: '10:00',
@@ -158,8 +155,7 @@ export const allShows: Show[] = [
     host: 'DJ Kams',
     description:
       'Vibe with Kams as he mixes music that spans throughout all generations and genres.',
-    image:
-      '/show-banners/swahilipot-mixes.png',
+    image: '/show-banners/swahilipot-mixes.png',
     category: 'Music',
     days: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
     startTime: '14:00',
