@@ -54,6 +54,9 @@ Please ensure your code follows our coding standards and includes appropriate te
 - **April 28, 2025**: Updated the README file to include a section for documenting recent changes and updates.
 - Added new shows to the schedule data in `scheduleData.ts`.
 - Improved page transitions and animations in `index.css` and `tailwind.config.ts`.
+- **April 8, 2026**: Updated hero carousel with new promotional banners and added fullscreen feature to live streaming page.
+- Fixed presenter information to match new promotional materials (added Cardiac Poet, Bahati Ngazi, updated VDJ Kams).
+- Resolved CI/CD deployment issues with proper Vercel configuration and GitHub Actions workflows.
 
 ## License
 
