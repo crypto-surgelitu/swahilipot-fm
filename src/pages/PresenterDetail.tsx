@@ -47,7 +47,7 @@ const PresenterDetail = () => {
                   src={presenter.image}
                   alt={presenter.name}
                   className='object-cover w-full h-full'
-                  loading="lazy"
+                  loading='lazy'
                 />
               ) : (
                 <div className='flex items-center justify-center w-full h-full bg-muted'>
