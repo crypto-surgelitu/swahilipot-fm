@@ -29,8 +29,8 @@ const HeroSection = () => {
   };
 
   const showBanners = [
-    '/show-banners/breakfast-club.png',
-    '/show-banners/swahilipot-aroma.png',
+    '/show-banners/breakfast-club.jpeg',
+    '/show-banners/swahilipot-cafe.jpeg',
     '/show-banners/swahilipot-aroma.png',
     '/show-banners/swahilipot-drive.png',
     '/show-banners/mikuki-ya-maneno.png',
