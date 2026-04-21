@@ -3,7 +3,7 @@ export const featuredShows = [
     title: 'The Breakfast Club',
     host: 'Miriam Angil, Emmanuel Gona, Salim Barissa',
     time: 'Weekdays • 7 - 10 AM',
-    image: '/show-banners/breakfast-club.png',
+    image: '/show-banners/breakfast-club.jpeg',
   },
   {
     title: 'Kick Off',
@@ -15,7 +15,7 @@ export const featuredShows = [
     title: 'Swahilipot Cafe',
     host: 'Dorcas Uwiyera, DJ Kams',
     time: 'Weekdays • 11 AM - 2 PM',
-    image: '/show-banners/swahilipot-cafe.png',
+    image: '/show-banners/swahilipot-cafe.jpeg',
   },
 ];
 
