@@ -40,12 +40,30 @@ const Schedule = () => {
     : [];
 
   return (
-    <div className='container mx-auto px-4 md:px-6 py-12'>
-      {/* Header section */}
-      <ScheduleHeader selectedDay={selectedDay} onDayChange={setSelectedDay} />
+    <div>
+      <section className='container mx-auto px-4 md:px-6 mb-10'>
+        <div className='max-w-7xl mx-auto'>
+          <div className='relative overflow-hidden rounded-2xl bg-black'>
+          <video
+            className='h-[260px] md:h-[360px] lg:h-[420px] w-full object-cover pointer-events-none'
+            src='/motion/spfm%20motion.mp4'
+            autoPlay
+            muted
+            loop
+            playsInline
+            disablePictureInPicture
+            controlsList='nodownload nofullscreen noplaybackrate noremoteplayback'
+          />
+          </div>
+        </div>
+      </section>
 
-      {/* Main content with tabs for different views */}
-      <div className='mb-8'>
+      <div className='container mx-auto px-4 md:px-6 py-2 md:py-6'>
+        {/* Header section */}
+        <ScheduleHeader selectedDay={selectedDay} onDayChange={setSelectedDay} />
+
+        {/* Main content with tabs for different views */}
+        <div className='mb-8'>
         <Tabs
           defaultValue='grid'
           className='w-full'
@@ -84,48 +102,49 @@ const Schedule = () => {
             <TimelineView shows={showsForSelectedDay} />
           </TabsContent>
         </Tabs>
-      </div>
+        </div>
 
-      {/* Weekly overview section */}
-      <div className='mt-16'>
-        <h2 className='font-display text-2xl font-bold mb-6'>
-          Weekly Overview
-        </h2>
-        <div className='overflow-x-auto pb-4'>
-          <div className='min-w-[800px]'>
-            <div className='grid grid-cols-7 gap-4'>
-              {scheduleByDay.map((day) => (
-                <div key={day.name} className='text-center'>
-                  <div
-                    className={`font-medium p-2 mb-2 rounded-lg ${
-                      day.name === selectedDay
-                        ? 'bg-[#2295e2] text-white'
-                        : 'bg-gray-100 text-black'
-                    }`}
-                  >
-                    {day.name}
+        {/* Weekly overview section */}
+        <div className='mt-16'>
+          <h2 className='font-display text-2xl font-bold mb-6'>
+            Weekly Overview
+          </h2>
+          <div className='overflow-x-auto pb-4'>
+            <div className='min-w-[800px]'>
+              <div className='grid grid-cols-7 gap-4'>
+                {scheduleByDay.map((day) => (
+                  <div key={day.name} className='text-center'>
+                    <div
+                      className={`font-medium p-2 mb-2 rounded-lg ${
+                        day.name === selectedDay
+                          ? 'bg-[#2295e2] text-white'
+                          : 'bg-gray-100 text-black'
+                      }`}
+                    >
+                      {day.name}
+                    </div>
+                    <div className='space-y-2'>
+                      {day.shows.map((show) => (
+                        <div
+                          key={show.id}
+                          className='p-2 text-xs bg-white border border-gray-200 rounded shadow-sm cursor-pointer hover:shadow-md transition-shadow'
+                          onClick={() => setSelectedDay(day.name)}
+                        >
+                          <p className='font-medium truncate'>{show.title}</p>
+                          <p className='text-gray-500'>
+                            {show.startTime.substring(0, 5)}
+                          </p>
+                        </div>
+                      ))}
+                      {day.shows.length === 0 && (
+                        <div className='p-2 text-xs text-gray-400 border border-dashed border-gray-200 rounded'>
+                          No shows
+                        </div>
+                      )}
+                    </div>
                   </div>
-                  <div className='space-y-2'>
-                    {day.shows.map((show) => (
-                      <div
-                        key={show.id}
-                        className='p-2 text-xs bg-white border border-gray-200 rounded shadow-sm cursor-pointer hover:shadow-md transition-shadow'
-                        onClick={() => setSelectedDay(day.name)}
-                      >
-                        <p className='font-medium truncate'>{show.title}</p>
-                        <p className='text-gray-500'>
-                          {show.startTime.substring(0, 5)}
-                        </p>
-                      </div>
-                    ))}
-                    {day.shows.length === 0 && (
-                      <div className='p-2 text-xs text-gray-400 border border-dashed border-gray-200 rounded'>
-                        No shows
-                      </div>
-                    )}
-                  </div>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
           </div>
         </div>
