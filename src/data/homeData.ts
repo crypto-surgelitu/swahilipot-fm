@@ -13,7 +13,7 @@ export const featuredShows = [
   },
   {
     title: 'Swahilipot Cafe',
-    host: 'Dorcas Uwiyera, DJ Kams',
+    host: 'Dorcas Uwiyera, DJ Kams' ,
     time: 'Weekdays • 11 AM - 2 PM',
     image: '/show-banners/swahilipot-cafe.jpeg',
   },
